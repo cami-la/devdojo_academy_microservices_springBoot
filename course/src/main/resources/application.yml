@@ -1,0 +1,14 @@
+server.port: 8081
+
+spring:
+  name: course
+  datasource:
+    url: jdbc:postgresql://localhost:5431/devdojo?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: cami
+    password: 0&gn^I3@a*fa%B#p
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
