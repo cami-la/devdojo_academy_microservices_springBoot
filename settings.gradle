@@ -1,0 +1,4 @@
+rootProject.name = 'springBoot_microservices_devdojo'
+include 'core'
+include 'course'
+

@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:alpine
+    #restart: always
+    ports:
+      - 5431:5432
+    environment:
+      POSTGRES_USER: cami
+      POSTGRES_PASSWORD: 0&gn^I3@a*fa%B#p
+    volumes:
+      - microservices_devdojo:/var/lib/postgres
+
+volumes:
+  microservices_devdojo:
+
+networks:
+  default:
+    name: microservices_devdojo-net
+
+# docker-compose -f stack.yml up -d
+# psql -h localhost -p 5431 cami
